@@ -57,7 +57,7 @@ def maximumSumSubarraySlidingWindow(arr, N, K):
         max_sum = sum(arr[:K])    # Calculating the sum of 1st window of size K
         current_sum = max_sum
         for i in range(K,N):
-            current_sum += arr[i] - arr[i-K]
+            current_sum += arr[i] - arr[i-K]   # Adding the current element and removing the 1st element of the window from left.
             max_sum = max(max_sum, current_sum)
         return max_sum
 
