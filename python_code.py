@@ -64,8 +64,8 @@ def maximumSumSubarraySlidingWindow(arr, N, K):
 # TIME COMPLEXITY : O(N-K)
 # SPACE COMPLEXITY : O(1)
 
-A = list(map(int, input().split()))
-K = int(input())
+A = [100, 200, 300, 400]
+K = 3
 N = len(A)
 #print(maximumSumSubarray(A,N,K)) # Uncomment this line if you want to try the brute force code
 print(maximumSumSubarraySlidingWindow(A, N, K))
